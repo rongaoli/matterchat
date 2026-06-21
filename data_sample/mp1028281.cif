@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Mg14VSb
+_symmetry_space_group_name_H-M   Amm2
+_cell_length_a   10.30984040
+_cell_length_b   6.25900996
+_cell_length_c   11.00309910
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   38
+_chemical_formula_structural   Mg14VSb
+_chemical_formula_sum   'Mg28 V2 Sb2'
+_cell_volume   710.02331398
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+  2  '-x, -y, z'
+  3  '-x, y, z'
+  4  'x, -y, z'
+  5  'x, y+1/2, z+1/2'
+  6  '-x, -y+1/2, z+1/2'
+  7  '-x, y+1/2, z+1/2'
+  8  'x, -y+1/2, z+1/2'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mg  Mg0  8  0.25121259  0.24578022  0.08384075  1
+  Mg  Mg1  4  0.00000000  0.24974991  0.91682581  1
+  Mg  Mg2  4  0.24807103  0.00000000  0.83416724  1
+  Mg  Mg3  4  0.25156628  0.00000000  0.33108353  1
+  Mg  Mg4  4  0.50000000  0.24873690  0.41612689  1
+  Mg  Mg5  2  0.00000000  0.00000000  0.16667098  1
+  Mg  Mg6  2  0.00000000  0.00000000  0.66679875  1
+  V  V7  2  0.50000000  0.00000000  0.16676418  1
+  Sb  Sb8  2  0.50000000  0.00000000  0.66798813  1

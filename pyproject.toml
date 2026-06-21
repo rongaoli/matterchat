@@ -1,0 +1,53 @@
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[project]
+name = "matterchat"
+version = "1.0"
+requires-python = ">= 3.10"
+
+dependencies = [
+    "pytorch-lightning==2.0.6",
+    "torch==2.4.1+cu124",
+    "torchvision==0.19.1+cu124",
+    "torchaudio==2.4.1+cu124",
+    "transformers>=4.42.4",
+    "tqdm",
+    "wandb>=0.10.33",
+]
+
+[tool.setuptools.packages.find]
+include = ["matterchat*"]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
+
+[[tool.uv.index]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+explicit = false
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
