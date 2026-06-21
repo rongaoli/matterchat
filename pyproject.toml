@@ -32,6 +32,7 @@ dependencies = [
     "transformers>=4.42.4",
     "tqdm",
     "wandb>=0.10.33",
+    "setuptools<71",
 ]
 
 [tool.setuptools.packages.find]
