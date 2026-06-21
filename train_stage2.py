@@ -33,6 +33,7 @@ WEIGHT_DECAY = 0.05
 
 
 def main():
+    torch.set_float32_matmul_precision("medium")
     model = MatterChatLLaVA(llm_model_path=LLM_PATH, encoder_dim=256)
 
     proj_sd = torch.load(STAGE1_PROJECTOR, map_location="cpu", weights_only=True)

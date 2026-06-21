@@ -31,6 +31,7 @@ DEVICES = 8
 
 
 def main():
+    torch.set_float32_matmul_precision("medium")
     model = MatterChatLLaVA(llm_model_path=LLM_PATH, encoder_dim=256)
     model.freeze_llm()
 
